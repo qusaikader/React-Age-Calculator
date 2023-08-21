@@ -1,0 +1,73 @@
+.inputs{
+    display: flex;
+    justify-content: start;
+    gap: 3rem;
+}
+
+
+.inputField {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    max-width: 120px;
+}
+
+.inputField label{
+    color: hsl(0, 1%, 44%);
+}
+
+.inputField input {
+    margin-top: 4px;
+    /* max-width: 44%; */
+    padding: 10px;
+    border: 1px solid hsl(0, 0%, 86%);
+    border-radius: 5px;
+    font-size: 32px;
+}
+
+.inputField p{
+    color: hsl(0, 100%, 67%);
+    font-weight: 400;
+    font-size: 10px;
+}
+
+.formFooter {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.formFooter hr{
+    flex-grow: 1;
+    border: none;
+    border-top: 1px solid hsl(0, 0%, 86%);
+}
+
+button {
+    width: 80px;
+    height: 80px;
+    border: none;
+    background-color: hsl(259, 100%, 65%);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.inputField .alert{
+    color: hsl(0, 100%, 67%);
+}
+
+.inputField .red-border {
+    border: 1px solid hsl(0, 100%, 67%);
+}
+
+@media screen and (max-width: 650px) {
+    .inputs{
+        max-width: 320px;
+        gap: 1rem;
+    }
+    .formFooter {
+        margin-top: 10px ;
+    }
+    
+  }
